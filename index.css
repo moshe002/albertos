@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    height: auto;
+    opacity: 55%;
+    transition: 0.5s;
+}
+
+header:hover {
+    opacity: 100%;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+header .header-contents {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+header nav {
+    /* border: 1px solid black; */
+    align-self: center;
+    margin-left: auto;
+}
+
+a {
+    font-size: 30px;
+    padding: 0rem 3rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    height: auto;
+    width: auto;
+    /* transition: 2s; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    max-width: 200px;
+    max-height: 200px;
+    clear: left;
+}
+
+body .content {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 2rem;
+    /* border: 1px solid blue; */
+    padding-bottom: 0;
+}
+
+body .content .title {
+    font-size: 100px;
+    /* border: 1px solid black; */
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+body .about-text {
+    /* border: 1px solid black; */
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 10rem;
+    padding: 5rem 10rem;
+    font-size: 20px;
+    color: white;
+}
+
+footer {
+    padding: 3rem 2rem;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px 1px black;
+    height: auto;
+}
+
+footer .footer-text {
+    display: flex;
+    /* border: 1px solid blue; */
+    padding: 2rem 0rem;
+}
+
+footer .footer-text h4 {
+    color: gray;
+}
+
+footer .footer-text .logo-flag {
+    /* border: 1px solid black; */
+    margin-left: auto;
+}
+
+footer .footer-text img {
+    padding-right: 2rem;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+footer .links {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer .links nav #footer-menu-link, footer .links nav #footer-location-link  {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+footer .all-rights {
+    text-align: center;
+}

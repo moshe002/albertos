@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255, 255, 255, 0.603)), url(/images/bg.jpg);
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    height: auto;
+    width: auto;
+    opacity: 55%;
+    transition: 0.5s;
+}
+
+header:hover {
+    opacity: 100%;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+header .header-contents {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+header nav {
+    /* border: 1px solid black; */
+    align-self: center;
+    margin-left: auto;
+}
+
+a {
+    font-size: 30px;
+    padding: 0rem 3rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    height: auto;
+    width: auto;
+    /* transition: 2s; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    max-width: 200px;
+    max-height: 200px;
+    clear: left;
+}
+
+body .menu-nav {
+    text-align: center;
+}
+
+body .menu-nav a {
+    color: gold;
+    font-weight: bolder;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    text-decoration: none;
+}
+
+
+body .title-menu {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 5rem;
+    color: orange;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+body .menu {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 15rem;    
+    padding: 5rem;
+    gap: 50px;
+    width: auto;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+body .menu .items {
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    width: auto;
+    border-radius: 10px;
+    background-color: rgb(247, 239, 131);
+    transition: 0.5s;
+}
+
+body .menu .items:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px -1px black;
+}
+
+body .menu .items p {
+    padding: 1rem;
+    text-justify: auto;
+}
+
+body .menu .items img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+body .breakfast-meals-title {
+    font-size: 70px;
+    color: orange;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+body .breakfast-meals {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    width: auto;
+    background-image: url(/images/breakfast\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body .breakfast-meals img {
+    margin-top: 2rem;
+    max-width: 50rem;
+    max-height: 50rem;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+body .breakfast-meals img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px -1px black;
+ }
