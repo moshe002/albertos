@@ -67,6 +67,10 @@ body .menu-nav a {
     text-decoration: none;
 }
 
+body .menu-nav a:hover {
+    text-decoration: underline;
+}
+
 
 body .title-menu {
     font-size: 70px;
@@ -112,7 +116,8 @@ body .menu .items img {
     max-width: 150px;
     max-height: 150px;
     border-radius: 25px;
-    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid black;
 }
 
 body .breakfast-meals-title {
@@ -157,7 +162,7 @@ body .breakfast-meals img:hover {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: burlywood; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
