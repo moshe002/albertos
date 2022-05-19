@@ -81,7 +81,7 @@ body .title-menu {
 }
 
 body .menu {
-    /* border: 1px solid black; */
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 15rem;    
@@ -108,7 +108,8 @@ body .menu .items:hover {
 }
 
 body .menu .items p {
-    padding: 1rem;
+    margin-top: 1rem;
+    /* padding: 1rem; */
     text-justify: auto;
 }
 
@@ -118,6 +119,12 @@ body .menu .items img {
     border-radius: 25px;
     margin-top: 1rem;
     border: 1px solid black;
+}
+
+body .menu .items .prices {
+    /* border: 1px solid black; */
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 body .breakfast-meals-title {
