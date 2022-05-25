@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('/images/bg.png');
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      url('/images/bg.png'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -77,16 +82,20 @@ body .content .title {
     color: white;
     text-shadow: 3px 3px black;
 }
-
-body .about-text {
+ 
+body .about-text p {
     /* border: 1px solid black; */
-    text-align: center;
+    text-align: justify;
     width: auto;
     height: auto;
     margin: 10rem;
     padding: 5rem 10rem;
     font-size: 20px;
     color: white;
+    /* letter-spacing: 2px; */
+    /* line-height: 26px; */
+    word-spacing: 5px;
+    /* text-justify: inter-ideograph; */
 }
 
 footer {

@@ -1,14 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255, 255, 255, 0.603)), url(/images/bg.jpg);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ),
+      url('/images/bg.jpg'); 
 }
 
 header {
+    /* position: fixed; */
     text-align: center;
     padding: 2rem;
     background-color: antiquewhite;
@@ -16,6 +22,8 @@ header {
     width: auto;
     opacity: 55%;
     transition: 0.5s;
+    /* margin-top: 0;
+    top: 0; */
 }
 
 header:hover {
@@ -31,6 +39,7 @@ header .header-contents {
 
 header nav {
     /* border: 1px solid black; */
+    /* position: fixed; */
     align-self: center;
     margin-left: auto;
 }
@@ -97,6 +106,7 @@ body .menu .items {
     /* border: 1px solid black; */
     padding: 1rem;
     width: auto;
+    height: auto;
     border-radius: 10px;
     background-color: rgb(247, 239, 131);
     transition: 0.5s;
@@ -180,3 +190,4 @@ body .breakfast-meals img:hover {
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
