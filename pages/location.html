@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/pages/location.css">
-    <script src="/pages/location.js"></script>
+    <script src="/pages/location.js" defer></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
     <title>Location</title>
 </head>
 <body>
@@ -22,9 +24,5 @@
     <div class="map-wrapper">
         <div id="map"></div>
     </div>
-    <script 
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV_O60eK5Q27RUV-IzK1osWwn7BWbtMHE&callback=initMap"
-    defer
-    ></script>
 </body>
 </html>
