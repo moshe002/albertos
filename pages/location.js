@@ -28,6 +28,23 @@ function setupMap(center) { //parameter center
   // albertos soong 10.300596078443927, 124.00365791399511
   // albertos tamiya 10.29645184549317, 123.96435406581095
 
+  // albertos minglanilla 10.246210502506685, 123.7974376318967
+  // albertos minglanilla lipata 10.255756695656286, 123.81125615817527
+  // albertos dumlog 10.24709157514339, 123.8392289156555
+  // albertos tabunok 10.262389324964628, 123.84103672482806
+  // albertos laray, talisay 10.258588710784318, 123.85918991537127
+  // albertos bulacao 10.276820685574993, 123.85244147782548
+  // albertos pardo 10.287778367336484, 123.86321859432063
+  // albertos mambaling 10.29237562445158, 123.87055443622737
+  // albertos uc pri 10.29914999077435, 123.89399694357667
+  // albertos near usc 10.30040731145718, 123.89815529039463
+  // albertos near fuente osmena 10.308941663434084, 123.8912378732456
+  // albertos capitol 10.315079181416474, 123.89097487170591
+  // albertos mabolo 10.320441297186179, 123.91108607454433
+  // albertos mandaue 10.330384191457242, 123.93303727260906
+  // albertos banilad 10.343704221137244, 123.9140257757486
+  // albertos cordova 10.264472359913485, 123.96271323558408
+
   const geojson = {
     "type": "FeatureCollection",
     "features": [
@@ -35,7 +52,7 @@ function setupMap(center) { //parameter center
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [123.70970742034524, 10.308540973802993]
+          "coordinates": [123.70970742034524, 10.308540973802993] // lutopan
         },
         "properties": {
           "address": "Lutopan",
@@ -47,7 +64,7 @@ function setupMap(center) { //parameter center
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [123.63507871166067, 10.37646042786487]
+          "coordinates": [123.63507871166067, 10.37646042786487] // toledo
         },
         "properties": {
           "address": "Toledo",
@@ -59,7 +76,7 @@ function setupMap(center) { //parameter center
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [123.97464661663679, 10.324738579704233]
+          "coordinates": [123.97464661663679, 10.324738579704233] // pusok
         },
         "properties": {
           "address": "Toledo",
@@ -71,7 +88,7 @@ function setupMap(center) { //parameter center
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [124.00365791399511, 10.300596078443927]
+          "coordinates": [124.00365791399511, 10.300596078443927] // soong
         },
         "properties": {
           "address": "Toledo",
@@ -83,7 +100,199 @@ function setupMap(center) { //parameter center
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [123.96435406581095, 10.29645184549317] 
+          "coordinates": [123.96435406581095, 10.29645184549317] // tamiya
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.7974376318967, 10.246210502506685] // minglanilla 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.81125615817527, 10.255756695656286] // minglanilla lipata
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.8392289156555, 10.24709157514339] // dumlog
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.84103672482806, 10.262389324964628] // tabunok 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.85918991537127, 10.258588710784318] //lara talisay 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.85244147782548, 10.276820685574993] //bulacao 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.86321859432063, 10.287778367336484] //pardo
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.87055443622737, 10.29237562445158] //mambaling 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.89399694357667, 10.29914999077435] //uc pri 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.89815529039463, 10.30040731145718] //near usc 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.8912378732456, 10.308941663434084] //near fuente osmena
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.89097487170591, 10.315079181416474] //capitol
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.91108607454433, 10.320441297186179] //mabolo 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.93303727260906, 10.330384191457242] //mandaue
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.9140257757486, 10.343704221137244] //banilad 
+        },
+        "properties": {
+          "address": "Toledo",
+          "city": "Toledo City",
+          "country": "Philippines"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [123.96271323558408, 10.264472359913485] //cordova
         },
         "properties": {
           "address": "Toledo",

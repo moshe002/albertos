@@ -64,14 +64,15 @@ header img {
 }
 
 body .map-wrapper {
+    /* border: 1px solid black; */
     width: auto;
     height: auto;
     padding: 3.5rem;
 }
 
 body #map {
-    margin-top: 5rem;
-    height: 400px;
+    margin-top: 1rem;
+    height: 500px;
     width: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 15px -1px black;
