@@ -3,6 +3,16 @@
 
 // let map;
 
+function myFunction() {
+  var x = document.getElementById('nav');
+  if(x.style.visibility !== "visible") {
+      x.style.visibility = "visible";
+  } else {
+      x.style.visibility = "hidden";
+  }
+}
+
+
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, { enableHighAccuracy: true })
 
 function successLocation(position) {
@@ -79,8 +89,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.97464661663679, 10.324738579704233] // pusok
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Pusok",
+          "city": "Lapu-Lapu City",
           "country": "Philippines"
         }
       },
@@ -91,8 +101,8 @@ function setupMap(center) { //parameter center
           "coordinates": [124.00365791399511, 10.300596078443927] // soong
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Soong I, Mactan",
+          "city": "Lapu-Lapu City",
           "country": "Philippines"
         }
       },
@@ -103,8 +113,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.96435406581095, 10.29645184549317] // tamiya
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Tamiya, Basak",
+          "city": "Lapu-Lapu City",
           "country": "Philippines"
         }
       },
@@ -115,8 +125,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.7974376318967, 10.246210502506685] // minglanilla 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Minglanilla",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -127,8 +137,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.81125615817527, 10.255756695656286] // minglanilla lipata
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Lipata, Minglanilla",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -139,8 +149,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.8392289156555, 10.24709157514339] // dumlog
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Dumlog",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -151,8 +161,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.84103672482806, 10.262389324964628] // tabunok 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Tabunok",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -163,8 +173,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.85918991537127, 10.258588710784318] //lara talisay 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Lara, Talisay",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -175,8 +185,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.85244147782548, 10.276820685574993] //bulacao 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Bulacao",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -187,8 +197,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.86321859432063, 10.287778367336484] //pardo
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Pardo, Cebu",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -199,8 +209,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.87055443622737, 10.29237562445158] //mambaling 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Mambaling",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -211,8 +221,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.89399694357667, 10.29914999077435] //uc pri 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Near UC Pri",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -223,8 +233,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.89815529039463, 10.30040731145718] //near usc 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Near USC",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -235,8 +245,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.8912378732456, 10.308941663434084] //near fuente osmena
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Near Fuente Osmeña",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -247,8 +257,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.89097487170591, 10.315079181416474] //capitol
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Capitol",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -259,8 +269,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.91108607454433, 10.320441297186179] //mabolo 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Mabolo",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -271,8 +281,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.93303727260906, 10.330384191457242] //mandaue
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Mandaue",
+          "city": "Mandaue City",
           "country": "Philippines"
         }
       },
@@ -283,8 +293,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.9140257757486, 10.343704221137244] //banilad 
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Banilad",
+          "city": "Cebu City",
           "country": "Philippines"
         }
       },
@@ -295,8 +305,8 @@ function setupMap(center) { //parameter center
           "coordinates": [123.96271323558408, 10.264472359913485] //cordova
         },
         "properties": {
-          "address": "Toledo",
-          "city": "Toledo City",
+          "address": "Cordova",
+          "city": "Cordova",
           "country": "Philippines"
         }
       },
