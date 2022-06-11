@@ -37,6 +37,11 @@ header .header-contents {
     /* border: 1px solid black; */
 }
 
+header .header-contents .icon {
+    display: none;
+    text-decoration: none;
+}
+
 header nav {
     /* border: 1px solid black; */
     /* position: fixed; */
@@ -45,7 +50,7 @@ header nav {
 }
 
 a {
-    font-size: 30px;
+    font-size: 25px;
     padding: 0rem 3rem;
     text-decoration: none;
     color: black;
@@ -85,6 +90,16 @@ body .menu-nav a:hover {
     text-decoration: underline;
 }
 
+body .nav .navigate {
+    display: none;
+}
+
+body .nav {
+    display: none;
+    /* border: 1px solid white; */
+    z-index: 99;
+    width: 10rem;
+}
 
 body .title-menu {
     font-size: 70px;
@@ -194,5 +209,187 @@ body .breakfast-meals img:hover {
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.4)
+          ),
+          url('/images/bg.jpg'); 
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    header {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: antiquewhite;
+        height: auto;
+        width: auto;
+        opacity: 100%;
+    }
+
+    header .header-contents {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    header .header-contents .icon {
+        display: block;
+        font-size: 30px;
+    } 
+
+    header nav {
+        /* border: 1px solid green; */
+        align-self: center;
+        margin-left: auto;
+    }
+
+    a {
+        display: none;
+    }
+
+    header img {
+        max-width: 125px;
+        max-height: 110px;
+        clear: left;
+        border-radius: 10px;
+    }
+
+    #img-a {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    } 
+
+    body .title-menu {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 5rem;
+        padding: 0 1.5rem;
+        color: orange;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+        /* border: 1px solid white; */
+    }
+    
+
+    body .menu-nav {
+        text-align: center;
+        /* border: 1px solid white; */
+        margin: 3.5rem 0;
+        padding: 0 0;
+        width: auto;
+        height: auto;
+    }
+    
+    body .menu-nav a {
+        text-align: center;
+        display: inline-block;
+        padding: 1.5rem;
+        color: gold;
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+    body .menu {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem 1rem;        
+        width: auto;
+        height: auto;
+        background-color: none;
+    }
+
+    body .menu .items {
+        text-align: center;
+        /* border: 1px solid black; */
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        background-color: rgb(247, 239, 131);
+        transition: 0.5s;
+    }
+
+    body .menu .items:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px -1px black;
+    }
+
+    body .menu .items img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 25px;
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+
+    body .nav .navigate {
+        display: block;
+        text-align: center;
+    }
+
+    body .nav {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        /* border-top: 1.5px solid black; */
+        z-index: 1;
+        width: auto;
+        background-color: antiquewhite;
+        box-shadow: 0px 10px 10px -1px black;
+    }   
+    
+    body .nav nav {
+        display: flex;
+        padding: 1rem;
+        /* border: 1px solid black; */
+    }
+
+    body .breakfast-meals {
+        border-top: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        padding-bottom: 10rem;
+        width: auto;
+        height: auto;
+        background-image: url(/images/breakfast\ bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    body .breakfast-meals .breakfast-meals-title {
+        font-size: 45px;
+    }
+    
+    body .breakfast-meals img {
+        margin-top: 2rem;
+        max-width: 30rem;
+        max-height: 30rem;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
   }
 
