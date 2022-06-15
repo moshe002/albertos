@@ -192,6 +192,7 @@ body .title-location-page {
 
     body .nav .navigate {
         display: block;
+        font-size: 16px;
     }
 
     body .nav {
@@ -207,7 +208,7 @@ body .title-location-page {
     
     body .nav nav {
         display: flex;
-        padding: 1rem;
+        padding-bottom: 1rem;
         /* border: 1px solid black; */
     }
 
