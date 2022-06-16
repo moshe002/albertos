@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="/images/pizza icon.png">
+    <link rel="stylesheet" href="location.css">
+    <script src="location.js" defer></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Location</title>
+</head>
+<body>
+    <header>
+        <div class="header-contents">
+            <a href="/dist/index.html" id="img-a">
+                <img src="/images/albertos logo.jpg" alt="albertos-logo" title="albertos logo">
+            </a>
+            <nav>
+                <a href="/dist/index.html" title="About Us">About Us</a>
+                <a href="menu.html" title="Menu">Menu</a>
+                <a href="order.html" title="Order">Order</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+        </div>
+    </header>
+    <div class="nav" id="nav">
+        <nav>
+            <a class="navigate" id="navigate" href="/dist/index.html" title="Menu">About Us</a>
+            <a class="navigate" id="navigate" href="menu.html" title="Location">Menu</a>
+            <a class="navigate" id="navigate" href="order.html" title="Order">Order</a>
+        </nav>
+    </div>
+    <h1 class="title-location-page">Albertos stores near you!</h1>
+    <div class="map-wrapper">
+        <div id="map"></div>
+    </div>
+</body>
+</html>

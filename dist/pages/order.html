@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="/images/pizza icon.png">
+    <link rel="stylesheet" href="order.css">
+    <title>Order</title>
+</head>
+<body>
+    <header>
+        <div class="header-contents">
+            <a href="/dist/index.html" id="img-a">
+                <img src="/images/albertos logo.jpg" alt="albertos-logo" title="albertos logo">
+            </a>
+            <nav>
+                <a href="/dist/index.html" title="About Us">About Us</a>
+                <a href="location.html" title="Location">Location</a>
+                <a href="menu.html" title="Menu">Menu</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+        </div>
+    </header>
+    <div class="nav" id="nav">
+        <nav>
+            <a class="navigate" id="navigate" href="/dist/index.html" title="Menu">About Us</a>
+            <a class="navigate" id="navigate" href="location.html" title="Location">Location</a>
+            <a class="navigate" id="navigate" href="menu.html" title="Order">Menu</a>
+        </nav>
+    </div>
+    <h1 class="order-title">Order your pizza here!</h1>
+        <div class="form-order" id="form1" name="form1">
+            <button type="submit" class="order-again-button" id="order-again-button" onclick="orderAgain()">Order again?</button>
+            <div class="form-inputs">
+                <label for="nameOfBuyer">Name: </label>
+                <input type="text" name="nameOfBuyer" id="nameOfBuyer" required> 
+            </div> 
+            <br>
+            <div class="form-inputs">
+                <label for="emailOfBuyer">Email: </label>
+                <input type="email" name="emailOfBuyer" id="emailOfBuyer" required> 
+            </div>
+            <br>
+            <div class="form-inputs">
+                <label for="numberOfBuyer">Cellphone number: </label>
+                <input type="number" name="numberOfBuyer" id="numberOfBuyer" required> 
+            </div> 
+            <br>
+            <div class="form-inputs">
+                <label for="addressOfBuyer">Address: </label>
+                <input type="text" name="addressOfBuyer" id="addressOfBuyer" required> 
+            </div> 
+            <br>
+            <div class="form-inputs">
+                <label for="pizza">Pizza: </label>
+                <input type="text" name="pizza" id="pizza" required> 
+            </div> 
+            <br>
+            <label for="typeOfPizza">Type of Pizza: </label> <br>
+                <div class="type-of-pizza">
+                    <label for="quickMelt">
+                        <input type="radio" name="type" value="quickmelt" id="quickMelt" required>Quickmelt
+                    </label>
+                    <label for="mozarella">
+                        <input type="radio" name="type" value="mozarella" id="mozarella" required>Mozarella
+                    </label>
+                </div>   
+                <br>
+            <label for="sizeOfPizza">Size of Pizza: </label> 
+                <div class="size-of-pizza">
+                    <label for="9inches">
+                        <input type="radio" name="size" value="9" id="9inches" required>9"
+                    </label>
+                    <label for="11inches">
+                        <input type="radio" name="size" value="11" id="11inches" required>11"
+                    </label>
+                </div>  
+            <button type="submit" class="submit-button" onclick="submit()">Submit</button>
+            <h1 id="order-text"></h1>
+    </div>
+    <script src="order.js" defer></script>
+    <script src="/dist/bundle.js" defer></script>
+</body>
+</html>
+
+<!-- ORDER PAGE NOT YET DONE, NOT YET PUSHED TO GITHUB  -->
