@@ -11,6 +11,8 @@ body {
         rgba(0, 0, 0, 0.3)
       ),
       url('/images/bg.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header {
@@ -211,6 +213,52 @@ body .breakfast-meals img:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+  footer {
+    padding: 3rem 2rem;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px 1px black;
+    height: auto;
+}
+
+footer .footer-text {
+    display: flex;
+    /* border: 1px solid blue; */
+    padding: 2rem 0rem;
+}
+
+footer .footer-text h4 {
+    color: gray;
+}
+
+footer .footer-text .logo-flag {
+    /* border: 1px solid black; */
+    margin-left: auto;
+}
+
+footer .footer-text img {
+    padding-right: 2rem;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+footer .links {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer .links nav #footer-menu-link, footer .links nav #footer-location-link, footer .links nav #footer-order-link  {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+footer .all-rights {
+    text-align: center;
+}
+
   @media only screen and (max-width: 600px) {
     * {
         margin: 0;
@@ -391,6 +439,19 @@ body .breakfast-meals img:hover {
         max-height: 30rem;
         transition: 0.5s;
         border-radius: 10px;
+    }
+
+    footer .links nav {
+        height: auto;
+        width: auto;
+        overflow-y: hidden;
+    }
+
+    footer .links nav #footer-menu-link, footer .links nav #footer-location-link, footer .links nav #footer-order-link {
+        display: inline;
+        font-size: 13px;
+        text-decoration: none;
+        padding: 1rem;
     }
   }
 
