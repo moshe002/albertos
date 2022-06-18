@@ -7,7 +7,7 @@ function submit() {
     var sizeOfPizza;
     var typeOfPizza;
 
-    if(document.getElementById('quickMelt').checked){
+    if(document.getElementById('quickmelt').checked){
         typeOfPizza = 'quickmelt'
     }
     else if(document.getElementById('mozarella').checked) {
@@ -21,7 +21,7 @@ function submit() {
         sizeOfPizza = '11 Inches'
     }
 
-    var a = document.getElementById('quickMelt').checked
+    var a = document.getElementById('quickmelt').checked
     var b = document.getElementById('mozarella').checked
     var c = document.getElementById('9inches').checked
     var d = document.getElementById('11inches').checked
@@ -34,6 +34,8 @@ function submit() {
         console.log(name + " " + email + " " + number + " " + address + " " + pizza + " " + typeOfPizza + " " + sizeOfPizza)
         document.getElementById('order-text').innerHTML = "Order received!"
         document.getElementById('order-again-button').style.visibility = "visible"
+        document.getElementById('submit-button').style.pointerEvents = "none"
+        document.getElementById('submit-button').style.opacity = "50%"
     }
     //---------------------------
 }
@@ -45,13 +47,15 @@ function orderAgain() {
     document.getElementById('addressOfBuyer').value = ""
     document.getElementById('pizza').value = ""
 
-    document.getElementById('quickMelt').checked = false
+    document.getElementById('quickmelt').checked = false
     document.getElementById('mozarella').checked = false
     document.getElementById('9inches').checked = false
     document.getElementById('11inches').checked = false
 
     document.getElementById('order-again-button').style.visibility = "hidden"
     document.getElementById('order-text').innerHTML = ""
+    document.getElementById('submit-button').style.pointerEvents = "auto"
+    document.getElementById('submit-button').style.opacity = "100%"
 }
 
 function myFunction() {
