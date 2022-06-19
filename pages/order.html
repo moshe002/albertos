@@ -30,7 +30,7 @@
         </nav>
     </div>
     <h1 class="order-title">Order your pizza here!</h1>
-        <div class="form-order" id="form1" name="form1">
+        <form class="form-order" id="form1" name="form1" action="#" method = "POST">
             <button type="submit" class="order-again-button" id="order-again-button" onclick="orderAgain()">Order again?</button>
             <div class="form-inputs">
                 <label for="nameOfBuyer">Name: </label>
@@ -76,9 +76,9 @@
                         <input type="radio" name="size" value="11" id="11inches" required>11"
                     </label>
                 </div>  
-            <button type="submit" class="submit-button" onclick="submit()" id="submit-button">Submit</button>
+            <button type="submit" class="submit-button" id="submit-button">Submit</button>
             <h1 id="order-text"></h1>
-    </div>
+        </form>
     <footer>
         <h3>Our branches can be accessed through our Facebook Pages!</h3>
         <div class="footer-text">
@@ -98,7 +98,7 @@
         <h3 class="all-rights">All rights reserved!</h3>
     </footer>
     <script src="order.js" defer></script>
-    <!-- <script src="orderPage.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
 </body>
 </html>
 

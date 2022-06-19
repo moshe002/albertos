@@ -1,4 +1,7 @@
-function submit() {
+const form = document.querySelector(".form-order");
+form.addEventListener("submit", e => {
+    e.preventDefault();
+
     var name = document.getElementById('nameOfBuyer').value
     var email = document.getElementById('emailOfBuyer').value
     var number = document.getElementById('numberOfBuyer').value
@@ -36,8 +39,25 @@ function submit() {
         document.getElementById('order-again-button').style.visibility = "visible"
         document.getElementById('submit-button').style.pointerEvents = "none"
         document.getElementById('submit-button').style.opacity = "50%"
+        sendEmail(name, email, pizza, typeOfPizza, sizeOfPizza)
     }
-    //---------------------------
+})
+
+function sendEmail(name, email, pizza, typeOfPizza, sizeOfPizza) {
+    Email.send({
+        
+        Host: "smtp.elasticemail.com", 
+        Username: "mosesfat@gmail.com",
+        Password: "E2A0ECA2692A945F3F5CBD27FADACB92F609",
+        To: `${email}`,
+        From: "mosesfat@gmail.com",
+        Subject: "Your Albertos Pizza Order",
+        Body: `Hello! ${name}, You ordered: ${pizza} Pizza, ${sizeOfPizza}, ${typeOfPizza}`,
+      }).then((success) => {
+        alert("Order sent successfully. Please check the spam folder in your email. Thank you for ordering");
+      }).catch((error) => {
+        alert("error sending message");
+      })
 }
 
 function orderAgain() {
