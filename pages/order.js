@@ -45,10 +45,9 @@ form.addEventListener("submit", e => {
 
 function sendEmail(name, email, pizza, typeOfPizza, sizeOfPizza) {
     Email.send({
-        
         Host: "smtp.elasticemail.com", 
         Username: "mosesfat@gmail.com",
-        Password: "E2A0ECA2692A945F3F5CBD27FADACB92F609",
+        Password: "29EC815DA87864000CC9934E539B33E9361D",
         To: `${email}`,
         From: "mosesfat@gmail.com",
         Subject: "Your Albertos Pizza Order",
