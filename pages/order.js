@@ -43,20 +43,20 @@ form.addEventListener("submit", e => {
     }
 })
 
+
 function sendEmail(name, email, pizza, typeOfPizza, sizeOfPizza) {
     Email.send({
-        Host: "smtp.elasticemail.com", 
-        Username: "mosesfat@gmail.com",
-        Password: "29EC815DA87864000CC9934E539B33E9361D",
+        SecureToken: "ff5cc044-279a-4167-b01c-e637245e5f16",
+        // Host: "smtp.elasticemail.com", 
+        // Username: "mosesfat@gmail.com",
+        // Password: "29EC815DA87864000CC9934E539B33E9361D",
         To: `${email}`,
         From: "mosesfat@gmail.com",
         Subject: "Your Albertos Pizza Order",
         Body: `Hello! ${name}, You ordered: ${pizza} Pizza, ${sizeOfPizza}, ${typeOfPizza}`,
-      }).then(() => {
-        alert("Order sent successfully. Please check the spam folder in your email. Thank you for ordering");
-      }).catch(() => {
-        alert("error sending message");
-      })
+      }).then(
+        message => alert(message)
+      )
 }
 
 function orderAgain() {
