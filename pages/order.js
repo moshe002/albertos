@@ -52,9 +52,9 @@ function sendEmail(name, email, pizza, typeOfPizza, sizeOfPizza) {
         From: "mosesfat@gmail.com",
         Subject: "Your Albertos Pizza Order",
         Body: `Hello! ${name}, You ordered: ${pizza} Pizza, ${sizeOfPizza}, ${typeOfPizza}`,
-      }).then((success) => {
+      }).then(() => {
         alert("Order sent successfully. Please check the spam folder in your email. Thank you for ordering");
-      }).catch((error) => {
+      }).catch(() => {
         alert("error sending message");
       })
 }
